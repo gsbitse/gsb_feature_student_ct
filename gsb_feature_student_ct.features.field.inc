@@ -48,7 +48,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -68,6 +70,7 @@ function gsb_feature_student_ct_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'conditions' => array(),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -131,6 +134,7 @@ function gsb_feature_student_ct_field_default_fields() {
           'module' => 'field_collection',
           'settings' => array(
             'add' => 'Add',
+            'conditions' => array(),
             'delete' => 'Delete',
             'description' => TRUE,
             'edit' => 'Edit',
@@ -220,7 +224,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 9,
         ),
@@ -278,6 +284,102 @@ function gsb_feature_student_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-student-field_company'.
+  $fields['node-student-field_company'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_company',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'student',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => 13,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_company',
+      'label' => 'Company',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => '',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '17',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
   // Exported field: 'node-student-field_file_single_public'.
   $fields['node-student-field_file_single_public'] = array(
     'field_config' => array(
@@ -317,7 +419,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'file_default',
           'weight' => 8,
         ),
@@ -409,7 +513,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 2,
         ),
@@ -504,6 +610,7 @@ function gsb_feature_student_ct_field_default_fields() {
           'label' => 'above',
           'module' => 'image',
           'settings' => array(
+            'conditions' => array(),
             'image_link' => '',
             'image_style' => '',
           ),
@@ -603,7 +710,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 4,
         ),
@@ -698,7 +807,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'link',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'link_default',
           'weight' => 12,
         ),
@@ -805,7 +916,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 6,
         ),
@@ -899,7 +1012,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 3,
         ),
@@ -993,7 +1108,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -1087,7 +1204,9 @@ function gsb_feature_student_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 7,
         ),
@@ -1149,6 +1268,7 @@ function gsb_feature_student_ct_field_default_fields() {
   t('Bio');
   t('Body');
   t('CV');
+  t('Company');
   t('First Name');
   t('Google Scholar Link');
   t('Last Name');
