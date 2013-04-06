@@ -55,3 +55,5 @@ features[variable][] = menu_parent_student
 features[variable][] = node_options_student
 features[variable][] = node_preview_student
 features[variable][] = node_submitted_student
+features_exclude[taxonomy][company_organization] = company_organization
+features_exclude[taxonomy][program] = program
