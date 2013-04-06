@@ -13,22 +13,43 @@ function gsb_feature_student_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_student';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_student'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_student';
+  $strongarm->value = '[node:field_first_name] [node:field_middle_name] [node:field_last_name]';
+  $export['auto_entitylabel_pattern_node_student'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_student';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_student'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__student';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '24',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '23',
         ),
         'workbench_access' => array(
-          'weight' => '13',
+          'weight' => '22',
         ),
       ),
       'display' => array(),
