@@ -23,7 +23,7 @@ function gsb_feature_student_ct_field_group_info() {
     'label' => 'Job Market Paper',
     'weight' => '18',
     'children' => array(
-      0 => 'field_job_market_paper',
+      0 => 'field_job_market_paper',      
       1 => 'field_job_market_description',
     ),
     'format_type' => 'fieldset',
@@ -51,7 +51,7 @@ function gsb_feature_student_ct_field_group_info() {
     'label' => 'Work In Progress',
     'weight' => '19',
     'children' => array(
-      0 => 'field_work_in_progress_title',
+      0 => 'field_work_in_progress_title',      
       1 => 'field_work_in_progress_desc',
     ),
     'format_type' => 'fieldset',
